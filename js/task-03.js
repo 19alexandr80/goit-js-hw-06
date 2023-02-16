@@ -40,10 +40,10 @@ const galleryEl = document.querySelector(".gallery");
 galleryEl.insertAdjacentHTML(
   "beforeEnd",
   images
-    .map(({ url, alt }) => {
-      return `<li class = 'class-list'>
-  <img src = '${url}' alt = '${alt}' width = 100%></img>
-</li>`;
-    })
+    .map(
+      ({ url, alt }) => `<li class = 'class-list'>
+        <img src = '${url}' alt = '${alt}' width = 100%></img>
+        </li>`
+    )
     .join("")
 );
