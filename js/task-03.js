@@ -35,7 +35,6 @@ const blokList = images
 </li>`;
   })
   .join("");
-console.log(blokList);
 galleryEl.insertAdjacentHTML("beforeEnd", blokList);
 
 // galleryEl.insertAdjacentHTML(
