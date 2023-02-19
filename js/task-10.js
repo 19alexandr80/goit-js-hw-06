@@ -11,10 +11,11 @@ const buttonDestroyEl = document.querySelector("[data-destroy]");
 buttonCreateEl.addEventListener("click", () => createBoxes(inputEl.value));
 function createBoxes(amount) {
   let createBoxesContent = "";
-  let wh = 20;
+  let widthEl = 20;
   for (let index = 0; index < amount; index++) {
-    wh += 10;
-    createBoxesContent += `<div style="width: ${wh}px; height: ${wh}px; background-color: ${getRandomHexColor()}" ></div>`;
+    widthEl += 10;
+    createBoxesContent += `<div style="width: ${widthEl}px;
+     height: ${widthEl}px; background-color: ${getRandomHexColor()}" ></div>`;
   }
   boxesEl.innerHTML = "";
   boxesEl.insertAdjacentHTML("beforeEnd", createBoxesContent);
