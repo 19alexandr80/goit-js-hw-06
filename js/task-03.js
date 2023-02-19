@@ -28,22 +28,23 @@ const galleryEl = document.querySelector(".gallery");
 // });
 // galleryEl.insertAdjacentHTML("beforeEnd", dsw.innerHTML);
 
-// const blokList = images
-//   .map(({ url, alt }) => {
-//     return `<li class = 'class-list'>
-//   <img src = '${url}' alt = '${alt}' width = 100%></img>
-// </li>`;
-//   })
-//   .join("");
-// galleryEl.insertAdjacentHTML("beforeEnd", blokList);
+const blokList = images
+  .map(({ url, alt }) => {
+    return `<li class = 'class-list'>
+  <img src = '${url}' alt = '${alt}' width = 100%></img>
+</li>`;
+  })
+  .join("");
+console.log(blokList);
+galleryEl.insertAdjacentHTML("beforeEnd", blokList);
 
-galleryEl.insertAdjacentHTML(
-  "beforeEnd",
-  images
-    .map(
-      ({ url, alt }) => `<li class = 'class-list'>
-        <img src = '${url}' alt = '${alt}' width = 100%></img>
-        </li>`
-    )
-    .join("")
-);
+// galleryEl.insertAdjacentHTML(
+//   "beforeEnd",
+//   images
+//     .map(
+//       ({ url, alt }) => `<li class = 'class-list'>
+//         <img src = '${url}' alt = '${alt}' width = 100%></img>
+//         </li>`
+//     )
+//     .join("")
+// );
