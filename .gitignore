@@ -103,5 +103,6 @@ dist
 # TernJS port file
 .tern-port
 
-# costom
-./gitlab-pages -header "Permissions-Policy: interest-cohort=()"
+# gitlab.rb
+
+gitlab_pages['headers'] = [ "Permissions-Policy: interest-cohort=()" ]
